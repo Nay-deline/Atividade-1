@@ -1,2 +1,41 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+using NUnit.Framework;
+using System;
+
+[TestFixture]
+public class CalculatorTests
+{
+    private Calculator calculator;
+
+    [SetUp]
+    public void Setup()
+    {
+        calculator = new Calculator();
+    }
+
+    [Test]
+    public void Add_Returns_CorrectSum()
+    { 
+        // Arrange
+        int a = 5;
+        int b = 3;
+
+        // Act
+        int result = calculator.Add(a, b);
+
+        // Assert
+        Assert.AreEqual(8, result);
+    }
+
+    [Test]
+    public void Subtract_Returns_CorrectDifference()
+    {
+        // Arrange
+        int a = 5;
+        int b = 3;
+         // Act
+        int result = calculator.Sub
+
+    }
+}
